@@ -28,134 +28,67 @@
 									data-separator="^\n$"
 									data-vertical="\n--\n">
 									<script type="text/template">
-									
-# MeetPy:Pandas&amp;DataAanalysis WorkShop
+									# PandasWS
 
 
 ## Agenda
-1. 概要
-2. WS
-	- 環境構築
-	- Pandas
-3. HandasOn
+1. 全体説明
+2. WS0:環境構築
+3. WS1:Pandas体験
+4. WS2:時系列分析入門
+5. CaseStudy
 
 
-## Pandasとは
-- Pythonでデータ処理を行う際の定番モジュール
-- Series,DataFrameというデータ形式の扱いが中心機能
-- データの扱い:ETL,Aggrigation・・・
+## WS0
 
 
-## データ分析とは
-\&lt;p\&gt;1. 現状を確認するためにデータを集め、\&lt;/p\&gt;
-\&lt;p\&gt;2. そのデータから実際に現実を可視化し、\&lt;/p\&gt;
-\&lt;p\&gt;3. データを操作することで、分析して洞察を導き、\&lt;/p\&gt;
-\&lt;p\&gt;4. 一般化することによって、将来の予測を行うこと\&lt;/p\&gt;
-
-
-## データとは何か
-1. 状況/存在を抽出した要素がある複数個の集団
-2. 数値/属性などを持つ
-
-__これらを抽象化した形式を「データ」として処理している__
-
-
-## 行列データ
-### 列方向
-- 抽象化されたデータの単位一つ
-
-### 行方向
-- 数値/属性などの情報を持つ
-- アトリビュートと呼ばれる
-
-
-## 作業としてのデータ分析の基本プロセス
-- データを読み込む
-- データを加工する
-- データを集計/可視化する
-- 分析を行う
-
-
-# Workshop 1
-
-
-## 環境の用意
-- Cloud9:
-- miniconda:Pythonの管理パッケージ
-- Notebookのダウンロード
-
-
-## minicondaの導入
-
-
-## minicondaによるDaツールの導入
-- Pandas
-- Numpy
-- IPython
-- Matplotlib
-- Notebook
-
-
-# Workshop 2:Pandas
-
-
-## Pandasによるデータの読み込み
-```ptyhon
-`import pandas as pd
-dat = pd.read_csv(“file_name”)
+### miniconda
+```bash
+bash W0 install01.sh
 ```
-`
-
-
-## Pandasの扱うデータ形式
-```python
-`dat.head()
-dat.ix[:,1]()
+terminalを再起動
+```bash
+bash W0 install02.sh
 ```
-`
-1. Index
-2. DataFrame
 
 
-## Pandasによるデータの操作(抽出)
-1. 列の抽出
-```python
-`dat.ix[:,\[“col”,”col”][2]]
-dat[“col_name_”]()
+### conda仮想環境
+```conda
+source activate py2
+conda list
 ```
-`
-2. 行の抽出
-```python
-`dat￼[dat\[￼”col”\&gt;10]()]
+
+
+### JUPYTER起動
 ```
-`
-
-
-## Pandasによるデータの操作(結合)
-```python
-`NewDF = pd.concat(DF,DF,axis=1)
+jupyter notebook --ip 0.0.0.0 --port xxxx --no-browser
 ```
-`
+https:env-name-user-name.cloud9.io
+
+でアクセス可能
 
 
-## Pandasによるデータの集計
-```python`
-dat[“”]().sum()
-```
-`
+## WS1:Pandas体験
 
 
-## Pandasによる中秋つ\&gt;集約
+## WS2:時系列分析入門
 
 
-
-## Pandasによる可視化
-
+## CaseStudy
 
 
-# Handas On
+### Case1:問題解決
+- あなたはスマホアプリの開発チームに所属するビジネスアナリストです
+- KPIを確認していると、アクティブユーザ数が減少している印象をうけました
+- インフラ管理者からデータをもらい、原因を究明、報告、対策をしてください
 
-[2]:	]
+
+### Case2:目標設定
+- あなたはスマホアプリの開発チームに所属するデータサイエンティストです
+- 来月の売上目標を設定したいとビジネスチームから要望をうけました
+- ビジネスチームと協力し、妥当な売上目標の設計、報告、提案をしてください
+
+
 
 									</script>
 				</section>
